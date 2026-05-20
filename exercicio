@@ -1,0 +1,30 @@
+let nome = "João"; // Pode ser qualquer nome
+console.log(nome);
+let idade = 25; // Exemplo de idade
+console.log("Minha idade é " + idade);
+console.log(`Minha idade é ${idade}`);
+let nomeUsuario = prompt("Qual é o seu nome?");
+console.log("O nome do usuário é: " + nomeUsuario);
+let idade = parseInt(prompt("Digite sua idade:"));
+
+if (idade >= 18) {
+    console.log("Maior de idade");
+} else {
+    console.log("Menor de idade");
+}
+let nota = parseFloat(prompt("Digite sua nota:"));
+
+if (nota >= 7) {
+    console.log("Aprovado");
+} else {
+    console.log("Reprovado");
+}
+let numero = parseFloat(prompt("Digite um número:"));
+
+if (numero > 0) {
+    console.log("Número positivo");
+} else if (numero < 0) {
+    console.log("Número negativo");
+} else {
+    console.log("O número é zero");
+}
