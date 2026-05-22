@@ -1,0 +1,9 @@
+mkdir meu-projeto
+cd meu-projeto
+git init
+echo "# Meu Projeto" >> README.md
+git add README.md
+git commit -m "Primeiro commit"
+git remote add origin https://github.com/seu-usuario/meu-projeto.git
+git branch -M main
+git push -u origin main
