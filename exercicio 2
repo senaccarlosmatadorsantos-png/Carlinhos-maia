@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Container com Flexbox</title>
+<style>
+  /* Container com Flexbox */
+  .container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    gap: 20px;               /* Espaçamento entre as caixas */
+    height: 200px;           /* Altura do container para visualização */
+    border: 2px solid #333;  /* Borda para visualização do container */
+    background-color: #f0f0f0;
+  }
+
+  /* Estilo das caixas */
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    justify-content: center; /* Centraliza texto horizontalmente */
+    align-items: center;     /* Centraliza texto verticalmente */
+    font-size: 1.2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="box">Caixa 1</div>
+  <div class="box">Caixa 2</div>
+  <div class="box">Caixa 3</div>
+</div>
+
+</body>
+</html>
