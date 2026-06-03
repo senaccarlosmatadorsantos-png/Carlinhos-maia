@@ -1,0 +1,45 @@
+function adicionarFilme() {
+    let input = document.getElementById("filme");
+    let nomeFilme = input.value.trim();
+
+    if (nomeFilme === "") {
+        alert("Digite um filme!");
+        return;
+    }
+
+    let lista = document.getElementById("listaFilmes");
+
+    let item = document.createElement("li");
+
+    let texto = document.createElement("span");
+    texto.textContent = nomeFilme;
+
+    let divBotoes = document.createElement("div");
+    divBotoes.classList.add("botoes");
+
+    let btnAssistido = document.createElement("button");
+    btnAssistido.textContent = "✓";
+    btnAssistido.classList.add("assistir");
+
+    btnAssistido.onclick = function () {
+        texto.classList.toggle("assistido");
+    };
+
+    let btnRemover = document.createElement("button");
+    btnRemover.textContent = "🗑";
+    btnRemover.classList.add("remover");
+
+    btnRemover.onclick = function () {
+        item.remove();
+    };
+
+    divBotoes.appendChild(btnAssistido);
+    divBotoes.appendChild(btnRemover);
+
+    item.appendChild(texto);
+    item.appendChild(divBotoes);
+
+    lista.appendChild(item);
+
+    input.value = "";
+}
