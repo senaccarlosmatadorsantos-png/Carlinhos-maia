@@ -1,0 +1,34 @@
+let pessoa = {
+  nome: "João",
+  idade: 30,
+  cidade: "São Paulo"
+};
+
+console.log(pessoa.nome); // Mostra apenas o nome
+pessoa.idade = 35; // Alterando a idade
+
+console.log(pessoa); // Mostra o objeto atualizado
+pessoa.profissao = "Engenheiro";
+
+console.log(pessoa); // Objeto com a nova propriedade
+let carro = {
+  marca: "Toyota",
+  modelo: "Corolla",
+  ano: 2022,
+  cor: "Prata"
+};
+
+console.log(carro);
+let alunos = [
+  { nome: "Ana", nota: 8.5 },
+  { nome: "Bruno", nota: 7.0 },
+  { nome: "Carla", nota: 9.2 }
+];
+
+console.log(alunos[0].nota); // Nota do primeiro aluno
+alunos.push({ nome: "Daniel", nota: 8.0 });
+
+console.log(alunos);
+for (let i = 0; i < alunos.length; i++) {
+  console.log(alunos[i].nome);
+}
